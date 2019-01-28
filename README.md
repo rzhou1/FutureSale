@@ -1,7 +1,7 @@
 # Sale prediction - Time series dataset
 The dataset is part of a Coursera course (How to win a data science competition) / Kaggle challenge for predicting future sales. 
 
-Here we provide a CatBoost model for predict retail future sale. The solution includes the following parts:
+Here we provide a CatBoost model for predicting retail future sale. The solution includes the following parts:
 
 Part 1. Original data preprocessing.
 Part 2. Aggregate daily data by month and define train and test data.
