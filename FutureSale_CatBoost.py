@@ -392,16 +392,16 @@ def trainTestSplit(data):
     X_train = []
     y_train = []
     for block_num in np.arange(22, 34, 1):
-        X_train_block = data[data['date_block_num'] < block_num].iloc[:, 30:-1]
+        X_train_block = data[data['date_block_num'] < block_num].iloc[:, 3:-1]
         y_train_block = data[data['date_block_num'] < block_num].iloc[:, -1]
 
         X_train.append(X_train_block)
         y_train.append(y_train_block)
 
-    X_val = data[data['date_block_num'] == 33].iloc[:, 30:-1]
+    X_val = data[data['date_block_num'] == 33].iloc[:, 3:-1]
     y_val = data[data['date_block_num'] == 33].iloc[:, -1]
 
-    test = data[data['date_block_num'] == 34].iloc[:, 30:-1]
+    test = data[data['date_block_num'] == 34].iloc[:, 3:-1]
 
     return X_train, y_train, X_val, y_val, test
 
