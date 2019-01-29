@@ -480,7 +480,7 @@ if __name__ == '__main__':
     # 12 training datasets created for generating 12 predictions (and models). The final prediciton is the average of the 12 predictions.
 
     #Part 5: model and submission
-    cat_features = [3,4]
+    cat_features = [0,1]
     scores, pred = catboostModel(X_train, y_train, X_val, y_val, test, cat_features)
 
     sub = submission(pred)
